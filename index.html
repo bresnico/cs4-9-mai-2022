@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.275">
+  <meta name="generator" content="quarto-0.9.301">
 
   <title>Focus 2022-2024</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -330,9 +330,10 @@
 <h2>Ordre du jour</h2>
 <ul>
 <li class="fragment">Accueil</li>
-<li class="fragment">Thème 4 : forme, contenu, responsabilités</li>
-<li class="fragment">Horaires en consultation</li>
-<li class="fragment">Communication autour de la formation</li>
+<li class="fragment">Thème 4 (forme, contenu, responsabilités) - décision</li>
+<li class="fragment">Tarifs horaires - information</li>
+<li class="fragment">Calendrier - consultation</li>
+<li class="fragment">Communication autour de la formation - information</li>
 <li class="fragment">Structure finale de la formation (contenus, équipes de formation)</li>
 <li class="fragment">Modalités finales de la formation (part technologique, ressources à disposition)</li>
 <li class="fragment">Prochaines étapes</li>
@@ -366,12 +367,13 @@
   <script>window.backupDefine = window.define; window.define = undefined;</script>
   <script src="index_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-    <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-    <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-    <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-    <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-    <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
+
   <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
   <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
   <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
@@ -588,7 +590,10 @@
         button.blur();
         // flash "checked"
         button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
         setTimeout(function() {
+          button.setAttribute("title", currentTitle);
           button.classList.remove('code-copy-button-checked');
         }, 1000);
         // clear code selection
